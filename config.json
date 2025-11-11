@@ -1,0 +1,23 @@
+{
+  "random_forest": {
+    "n_jobs": 2,
+    "verbose": 2,
+    "random_state": 42,
+
+    "param_grid": {
+      "clf__n_estimators": [100, 200, 300],
+      "clf__max_depth": [10, 20],
+      "clf__min_samples_split": [5, 10]
+    },
+
+    "smote_strategy": {
+      "2": 1432,
+      "3": 1432
+    },
+    "undersample_strategy": {
+      "0": 1432
+    },
+
+    "n_splits": 5
+  }
+}

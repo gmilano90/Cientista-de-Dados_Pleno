@@ -1,0 +1,10 @@
+2025-11-09 17:20:08,349 [INFO] - Starting model training pipeline...
+2025-11-09 17:20:08,431 [INFO] - Dataset loaded successfully. Shape: (100000, 14)
+2025-11-09 17:20:10,061 [INFO] - Data preprocessing completed.
+2025-11-09 17:20:10,096 [INFO] - Train-test split completed.
+2025-11-09 17:20:10,468 [INFO] - Feature engineering completed and preprocessing artifacts saved.
+2025-11-09 17:20:10,470 [INFO] - Target encoding completed.
+2025-11-09 17:21:11,886 [INFO] - Random Forest model training completed.
+2025-11-09 17:21:12,569 [INFO] - Model evaluation completed. Metrics: {'accuracy': 0.5921333333333333, 'macro_f1': 0.2186684938701962, 'balanced_accuracy': 0.37663415395363753}
+2025-11-09 17:21:12,625 [INFO] - Model saved to chosen_model/best_rf_model_resampling.pkl
+2025-11-09 17:21:12,625 [INFO] - Training pipeline finished.
