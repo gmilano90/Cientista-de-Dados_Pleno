@@ -36,8 +36,9 @@ It includes:
 | **my_functions.py** | Python module containing all reusable functions for data splitting, feature preparation, encoding, scaling, training, and evaluation. |
 | **test_my_functions.py** | Unit tests for critical functions. |
 | **requirements.txt** | List of all Python dependencies required to run the project. |
-| **executive_report.pdf** | Document with the project findings, modelling conclusions, technical documentation of the decisions made, analysis of limitations and next steps. |
-| **teste-pleno.pdf** | Project initial instructions. |
+| **executive_report.md** | Document with the project findings, modelling conclusions, technical documentation of the decisions made, analysis of limitations and next steps. |
+| **executive_report.pdf** | Pdf format of `executive_report.md` file. |
+
 
 ---
 
