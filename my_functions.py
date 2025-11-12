@@ -395,9 +395,9 @@ def train_random_forest(X_train, y_train, config_path="config.json"):
     
     Parameters
     ----------
-    X_train : pd.DataFrame
+    X_train : pd.DataFrame or np.ndarray
         Training feature set.
-    y_train : pd.Series
+    y_train : pd.Series or np.ndarray
         Training target labels.
     config_path : str, optional
         Path to the JSON configuration file. Default is "config.json".
@@ -425,6 +425,12 @@ def train_random_forest(X_train, y_train, config_path="config.json"):
         'clf__max_depth': [10, 20],
         'clf__min_samples_split': [5, 10]
     })
+
+    # Convert to pandas DataFrame if necessary (for consistency in feature checks)
+    if isinstance(X_train, np.ndarray):
+        X_train = pd.DataFrame(X_train)
+    if isinstance(y_train, np.ndarray):
+        y_train = pd.Series(y_train)
 
     # Ensure X_train is numeric (for test safety)
     if X_train.select_dtypes(include=['object', 'category']).shape[1] > 0:

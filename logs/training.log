@@ -8,3 +8,29 @@
 2025-11-09 17:21:12,569 [INFO] - Model evaluation completed. Metrics: {'accuracy': 0.5921333333333333, 'macro_f1': 0.2186684938701962, 'balanced_accuracy': 0.37663415395363753}
 2025-11-09 17:21:12,625 [INFO] - Model saved to chosen_model/best_rf_model_resampling.pkl
 2025-11-09 17:21:12,625 [INFO] - Training pipeline finished.
+2025-11-11 21:34:46,118 [INFO] - Starting model training pipeline...
+2025-11-11 21:34:46,778 [INFO] - Dataset loaded successfully. Shape: (100000, 14)
+2025-11-11 21:34:48,355 [INFO] - Data preprocessing completed.
+2025-11-11 21:34:48,393 [INFO] - Train-test split completed.
+2025-11-11 21:34:48,838 [INFO] - Feature engineering completed and preprocessing artifacts saved.
+2025-11-11 21:34:48,851 [INFO] - Target encoding completed.
+2025-11-11 21:34:48,863 [ERROR] - An error occurred during model training.
+Traceback (most recent call last):
+  File "c:\Users\giull\Desktop\CV novo\Cientista-de-Dados_Pleno\model_training.py", line 58, in <module>
+    grid_search = my_functions.train_random_forest(X_train, y_train)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\giull\Desktop\CV novo\Cientista-de-Dados_Pleno\my_functions.py", line 430, in train_random_forest
+    if X_train.select_dtypes(include=['object', 'category']).shape[1] > 0:
+       ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'select_dtypes'
+2025-11-11 21:34:48,865 [INFO] - Training pipeline finished.
+2025-11-11 21:43:38,636 [INFO] - Starting model training pipeline...
+2025-11-11 21:43:38,735 [INFO] - Dataset loaded successfully. Shape: (100000, 14)
+2025-11-11 21:43:40,383 [INFO] - Data preprocessing completed.
+2025-11-11 21:43:40,412 [INFO] - Train-test split completed.
+2025-11-11 21:43:40,853 [INFO] - Feature engineering completed and preprocessing artifacts saved.
+2025-11-11 21:43:40,856 [INFO] - Target encoding completed.
+2025-11-11 21:44:51,685 [INFO] - Random Forest model training completed.
+2025-11-11 21:44:52,547 [INFO] - Model evaluation completed. Metrics: {'accuracy': 0.5921333333333333, 'macro_f1': 0.2186684938701962, 'balanced_accuracy': 0.37663415395363753}
+2025-11-11 21:44:52,629 [INFO] - Model saved to chosen_model/best_rf_model_resampling.pkl
+2025-11-11 21:44:52,629 [INFO] - Training pipeline finished.
